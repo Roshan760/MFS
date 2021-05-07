@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html,body{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    height: 100%;
+    font-family: 'Roboto Medium';
+
+}
+
+.full-width {
+    width: 100%;
+  }
+
+button:focus {
+    outline: none;
+  }
+
+  .body1::-webkit-scrollbar {
+    width: 5px;
+}
+  .body1::-webkit-scrollbar-track {
+    background: whitesmoke;
+    border-radius: 20px;
+
+  }
+  .body1::-webkit-scrollbar-thumb {
+    background-color:#094067;
+    border-radius: 10px;
+    border: 3px solid #094067;
+  }
+
+  .custom-dialog-container .mat-dialog-container{
+    padding: 0;
+    background: transparent !important;
+    border: none;
+    /* background-color: lightgray; */
+  }
+
+
+
+
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.header{
+
+  text-align: left;
+
+}
+th{
+  background-color: rgb(184, 180, 180);
+  color: white;
+}
+.header{
+  height: 40px;
+  background-color: rgb(89, 91, 247);
+}

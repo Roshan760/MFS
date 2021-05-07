@@ -1,0 +1,93 @@
+nav{
+  background-image: linear-gradient(to right, rgb(0, 162, 255) , rgb(0, 47, 255));
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+}
+
+.navbar-brand{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 21px;
+  color: #FFFFFE;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color:#FFFFFE;
+  font-family: Roboto Condensed;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color:#5F6C7B;
+  font-family: Roboto Condensed;
+}
+
+/* .named-nav{
+  margin-left: 100px;
+} */
+
+.example-spacer {
+    flex: 1 1 auto;
+    cursor: pointer;
+  }
+
+.username{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hamburger{
+  font-size: 30px;
+}
+.nav-link{
+  cursor: pointer;
+}
+.logout{
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.title{
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  cursor: pointer;
+}
+
+.menu-icon{
+  display: block;
+}
+
+@media screen and (max-width: 600px){
+  /* .named-nav{
+    margin-left: 0;
+  } */
+}
+
+.user-dropdown,.btn-secondary:not(:disabled):not(.disabled):active{
+	background-color: #094067 !important;
+    border: none !important;
+	box-shadow: none !important;
+}
+
+.user-div{
+	margin : 0 !important;
+}
+
+.header-image{
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+.dropdown{
+  cursor: pointer;
+  margin: 0 20px 0 0;
+}
+
+button{
+  outline: none;
+}
