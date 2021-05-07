@@ -7,14 +7,14 @@ const { autoUpdater } = require('electron-updater');
   var temp=[];
   var mainWindow;
   let test;
-  var sqlite3 = require('sqlite3').verbose();
-  //var db = new sqlite3.Database('./table.db',sqlite3.OPEN_READWRITE,(err)=>{
-  var db = new sqlite3.Database('D:/MFS_Replacement_Code/my-app/infsay.db',sqlite3.OPEN_READWRITE,(err)=>{
-  if(err){
-  console.error(err.message);
-  }
-  console.log('connected')
-  });
+  // var sqlite3 = require('sqlite3').verbose();
+  // //var db = new sqlite3.Database('./table.db',sqlite3.OPEN_READWRITE,(err)=>{
+  // var db = new sqlite3.Database('D:/MFS_Replacement_Code/my-app/infsay.db',sqlite3.OPEN_READWRITE,(err)=>{
+  // if(err){
+  // console.error(err.message);
+  // }
+  // console.log('connected')
+  // });
   
 
 
@@ -38,15 +38,15 @@ const { autoUpdater } = require('electron-updater');
     //   })
     // );
     // Open the DevTools.
-
+    mainWindow.once('ready-to-show', () => {
+      autoUpdater.checkForUpdatesAndNotify();
+    });
     mainWindow.webContents.openDevTools()
     mainWindow.on('closed', function () {
       mainWindow = null
     })
   }
-  mainWindow.once('ready-to-show', () => {
-    autoUpdater.checkForUpdatesAndNotify();
-  });
+
 
   app.on('ready', createWindow)
 
