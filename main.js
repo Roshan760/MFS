@@ -5,7 +5,7 @@ const { autoUpdater } = require('electron-updater');
   const url = require("url");
   const path = require("path");
   var temp=[];
-  var mainWindow;
+  let mainWindow;
   let test;
   // var sqlite3 = require('sqlite3').verbose();
   // //var db = new sqlite3.Database('./table.db',sqlite3.OPEN_READWRITE,(err)=>{
@@ -47,13 +47,17 @@ const { autoUpdater } = require('electron-updater');
       mainWindow = null
     })
     
-    autoUpdater.checkForUpdatesAndNotify();
+    mainWindow.once('ready-to-show', () => {
+      autoUpdater.checkForUpdatesAndNotify();
+    });
   
     console.log(" outside auto updater1")
   }
 
 
-  app.on('ready', createWindow)
+  app.on('ready', () => {
+    createWindow();
+  });
 
   app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit()
