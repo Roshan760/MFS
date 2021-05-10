@@ -47,9 +47,8 @@ const { autoUpdater } = require('electron-updater');
       mainWindow = null
     })
     
-    mainWindow.once('ready-to-show', () => {
-      autoUpdater.checkForUpdatesAndNotify();
-    });
+  
+  autoUpdater.checkForUpdatesAndNotify();
   
     console.log(" outside auto updater1")
   }
