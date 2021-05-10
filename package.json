@@ -1,6 +1,6 @@
 {
   "name": "electron-demo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Roshan Kumar",
   "license": "MIT",
   "main": "main.js",
@@ -13,7 +13,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron":"electron .",
-    "start:electron": "ng build --prod && electron .",
+    "start:electron": "ng build && electron .",
     "package": "electron-packager . Windowsapp --platform=win32 --arch=all",
     "dist": "electron-builder"
   },
