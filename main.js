@@ -29,7 +29,7 @@ const { autoUpdater } = require('electron-updater');
       }
     })
     console.log("started",mainWindow)
-    mainWindow.loadURL(`file://${__dirname}/src/index.html`);
+    mainWindow.loadURL(`file://${__dirname}/build/index.html`);
     // mainWindow.loadFile('.src/index.html');
     // mainWindow.loadFile('./dist/electron-demo/index.html')
     // mainWindow.loadURL(
