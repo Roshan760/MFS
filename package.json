@@ -1,6 +1,6 @@
 {
   "name": "electron-demo",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "author": "Roshan Kumar",
   "license": "MIT",
   "main": "main.js",
