@@ -17,7 +17,7 @@ function launchCode(){
     var exec = require('child_process').exec, child;
     console.log('calling java');
     console.log("process",process.cwd())
-    console.log("dir",__dirname)
+    console.log("dir :",__dirname)
     console.log(process.resourcesPath)
     //console.log(exec.caller);
     //const childPorcess = exec('java -jar C:\\Node_Trails\\hello-world\\invoke-jar.jar "Jar is invoked by Node js"', function(err, stdout, stderr) {
